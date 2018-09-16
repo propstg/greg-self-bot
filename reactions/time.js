@@ -24,7 +24,6 @@ const process = message =>
 
 module.exports = {
     name: "time",
-    continueProcessing: true,
     process: process,
     canProcess: message => message.content.match(REGEX) != null
 };

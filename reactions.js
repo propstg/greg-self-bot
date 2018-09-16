@@ -20,10 +20,6 @@ const processMessage = async (message) => {
         if (processor.canProcess(message)) {
             console.log(`Using reaction processor ${processor.name} for message "${message.content}"`);
             processor.process(message);
-
-            if (!processor.continueProcessing) {
-                break;
-            }
         }
     }
 }
