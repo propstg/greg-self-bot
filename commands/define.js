@@ -1,7 +1,6 @@
 const Client = require("node-rest-client").Client;
 const Discord = require("discord.js");
 const request = require("request");
-const fs = require("fs");
 const truncate = require("truncate");
 
 const URL = "http://api.urbandictionary.com/v0/define?term=";

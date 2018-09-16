@@ -12,11 +12,10 @@ const loadCommand = (module) => {
     console.log(`Loaded command:  ${command.command}`);
 };
 
-const loadAllCommands = async () => {
+const loadAllCommands = async () =>
     (await fs.readdir("./commands"))
         .map(file => "./commands/" + file)
         .forEach(loadCommand);
-}
 
 const processCommand = async (message) => {
     let args = [];
