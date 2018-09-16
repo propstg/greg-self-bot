@@ -1,1 +1,1 @@
-# greg-bot
+# greg-self-bot

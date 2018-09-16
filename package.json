@@ -11,16 +11,11 @@
   "author": "gregory propst",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.1.0",
+    "discord.js": "^11.4.2",
     "fs-promise": "^2.0.3",
-    "moonmoji": "^1.1.9",
-    "mysql": "latest",
+    "moment-timezone": "^0.5.21",
     "node-rest-client": "^3.1.0",
-    "pad-left": "^2.1.0",
-    "pad-right": "^0.2.2",
-    "phantom": "^4.0.5",
-    "phantomjs": "^2.1.7",
-    "request": "^2.81.0",
+    "request": "^2.88.0",
     "truncate": "^2.0.0",
     "xml2js": "^0.4.17"
   }

@@ -2,8 +2,10 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const config = require("./config/config.json");
 const commands = require("./commands.js");
+const reactions = require("./reactions.js");
 
 commands.loadAllCommands();
+reactions.loadProcessors();
 
 client.on('ready', async () => {
     console.log("Logged in.")
@@ -14,6 +16,7 @@ client.on('ready', async () => {
 client.on("message", async (message) => {
     if (message.author !== client.user) return;
     commands.processCommand(message);
+	reactions.processMessage(message);
 });
 
 console.log("Logging in...");
