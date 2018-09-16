@@ -18,13 +18,13 @@ const replaceTimeMatch = (...args) => {
 const replace = string => string.replace(REGEX, replaceTimeMatch);
 
 const process = message =>
-	setTimeout(() => {
-		message.edit(replace(message.content))
-	}, 50);
+    setTimeout(() => {
+        message.edit(replace(message.content))
+    }, 50);
 
 module.exports = {
-	name: "time",
-	continueProcessing: true,
-	process: process,
-	canProcess: message => message.content.match(REGEX) != null
+    name: "time",
+    continueProcessing: true,
+    process: process,
+    canProcess: message => message.content.match(REGEX) != null
 };
