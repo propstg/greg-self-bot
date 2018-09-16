@@ -1,0 +1,27 @@
+{
+  "name": "greg-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "dev": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "forever": "forever start main.js -o out.log && tail -f out.log"
+  },
+  "author": "gregory propst",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.1.0",
+    "fs-promise": "^2.0.3",
+    "moonmoji": "^1.1.9",
+    "mysql": "latest",
+    "node-rest-client": "^3.1.0",
+    "pad-left": "^2.1.0",
+    "pad-right": "^0.2.2",
+    "phantom": "^4.0.5",
+    "phantomjs": "^2.1.7",
+    "request": "^2.81.0",
+    "truncate": "^2.0.0",
+    "xml2js": "^0.4.17"
+  }
+}
