@@ -7,8 +7,7 @@ const format = (original, hours, minutes) => {
     return `${original} ${time.format('z')} (UTC${time.format('Z')})`;
 };
 
-const getHoursInTwentyFourHourFormat = (hours, amOrPm) =>
-    hours + (amOrPm.toLowerCase() === 'pm' ? 12 : 0);
+const getHoursInTwentyFourHourFormat = (hours, amOrPm) => Number(hours) + (amOrPm.toLowerCase() === 'pm' ? 12 : 0);
 
 const replaceTimeMatch = (...args) => {
     const [match, hours, , minutes, amOrPm] = args;
@@ -25,5 +24,5 @@ const process = message =>
 module.exports = {
     name: "time",
     process: process,
-    canProcess: message => message.content.match(REGEX) != null
+    canProcess: message => message.content.match(REGEX) !== null
 };
