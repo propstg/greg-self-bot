@@ -61,3 +61,5 @@ images/abuse/
 work/*
 config.js
 *disabled.json
+
+config/config.json
